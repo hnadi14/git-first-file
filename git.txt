@@ -20,4 +20,8 @@ git log
 git log --oneline
 git log --stat
 >**** q for exit
-************
+*****************************
+> branch in git
+git branch
+git branch --list
+
