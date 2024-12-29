@@ -27,3 +27,7 @@ git branch --list
 ***********************
 > switch to branch
 git checkout brnachName
+> change branch name
+git branch -m oldname new name
+> merage this branch with branchname1
+git merge branchname1
