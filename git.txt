@@ -34,3 +34,4 @@ git merge branchname1
 > for delete branch if branch not merge to master
 git branch -D branchname
 
+******
