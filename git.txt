@@ -16,6 +16,8 @@ git commit -m "message ..."
 ************************
 > all files 
 git add .
-
-
-...****8888
+git log
+git log --oneline
+git log --stat
+>**** q for exit
+************
