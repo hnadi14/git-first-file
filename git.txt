@@ -33,5 +33,13 @@ git branch -m oldname new name
 git merge branchname1
 > for delete branch if branch not merge to master
 git branch -D branchname
+*****************
+> back to point
+git checkout HASHCODE
+************
+> DANGER  delete of effects of commit in git, just last commit
+git revert HASHCODE
+***************
+> conflict when a commit effect same file
+> just use revert for last commit
 
-******
