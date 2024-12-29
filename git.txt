@@ -24,4 +24,6 @@ git log --stat
 > branch in git
 git branch
 git branch --list
-
+***********************
+> switch to branch
+git checkout brnachName
