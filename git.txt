@@ -11,7 +11,8 @@ git init
 ************************
 > untracked file in first run of git status
 git status
-
+git add filename.txt
+git commit -m "message ..."
 
 
 
