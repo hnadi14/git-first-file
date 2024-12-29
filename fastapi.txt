@@ -1,0 +1,33 @@
+install******************
+>in terminal pycharm
+pip install fastapi
+pip install uvicorn
+*******************
+>document for api
+> add docs or redoc to address bar in browser
+**********************************
+> run serer in terminal filename=first and app=FastAPI
+uvicorn first:app --reload
+***********
+> if perviuse server is run go to startTask manager and end task pythonor uvicorn
+*****************
+> jinja2 for templates of html for fastapi for normal html page
+*******************************
+> orm convert python code for use database
+> in terminal
+pip install SQLAlchemy
+************************
+> for manage migration of database
+pip install alembic
+alembic init migrations
+> in alembic.ini add address of database
+sqlalchemy.url = sqlite:///./sql_app.db
+> in env.py add this line
+target_metadata = Base.metadata
+> comment in app file line create all
+> in terminal  "message for set name of migrations"
+alembic revision --autogenerate -m "create user model"
+> head is last file migration or id or hash in migration file of file
+alembic upgrade head
+alembic downgrade ####
+*************************************

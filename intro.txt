@@ -1,0 +1,50 @@
+cmd *****************************************
+ایجاد یک پوشه جدید و محیط مجازی و نصب جنگو
+cd intro_django
+python -m venv env
+env\scripts\activate
+pip list
+pip install django
+**********************
+comeback to mother project
+cd.. 
+cd..
+اماده ایجاد پروژه جدید و مراحل کار
+django-admin startproject first
+cd first
+****************************
+باز کردن پروژه و انتخاب env
+file>settings>project>python interpreter> add .....
+in folder >scripts>python.exe or python313 or ......
+list of package installed load
+***************************************
+on > terminal pycharm
+python manage.py runserver
+
+****************************************
+>run database
+python manage.py migrate
+*************************
+>create superuser for .../admin page
+python manage.py createsuperuser
+******************************************
+>create app
+python manage.py startapp home
+add urls.py to app
+add app to settings project
+add views ....
+include urls app to urls project ****
+'home' add urls project to urls app '' notinghs add to urls app
+****************
+..create table for sql from models ...... changes on app.migrations.0000_initial.py
+python manage.py makemigrations
+..run again set change to 0002..... file
+..and add table ... to sqlite and other migrate
+python manage.py migrate
+****************************************************
+..add table to admin panel
+app>admin.py
+************************************************
+.. query and get data from database in views
+use tablename.objects.......
+

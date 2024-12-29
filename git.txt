@@ -1,0 +1,17 @@
+https://git-scm.com/
+>in terminal or git bash
+git status
+git config --global user.name "hnadi14"
+git config --global user.email "hnadi14@gmail.com"
+git config --list
+*******************
+>set project to git:  go to project dir and  Then create .git dir and dont change dir and other file in this dir
+> this project in git is repository under git
+git init
+************************
+> untracked file in first run of git status
+git status
+
+
+
+

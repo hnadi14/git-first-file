@@ -1,0 +1,42 @@
+terminal******************
+pip freeze > requirements.txt
+
+
+on server
+wsgi.py ************************
+import sys
+path='/home/hnadi14/myproject'
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
+
+bash consol **********************
+ls
+unzip myproject.zip
+ pip install -r requirements.txt
+python manage.py migrate
+python manage.py collectstatic
+python manage.py createsuperuser
+
+settings.py **********************************
+DEBUG = False
+ALLOWED_HOSTS = ['hnadi14.pythonanywhere.com', 'www.hnadi14.pythonanywhere.com']
+CSRF_COOKIE_SECURE = False  # اگر از HTTPS استفاده نمی‌کنید، این مقدار باید False باشد
+CSRF_COOKIE_HTTPONLY = True
+CSRF_TRUSTED_ORIGINS = ['https://hnadi14.pythonanywhere.com', 'https://www.hnadi14.pythonanywhere.com']
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
+STATIC_URL = 'static/'
+STATIC_ROOT = '../hnadi14/static/'
+
+views.py ************************************************
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt
+
+

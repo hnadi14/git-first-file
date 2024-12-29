@@ -1,0 +1,49 @@
+after create django project
+******
+>in terminal pycharm
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+*************
+>in tailwind.config.js add code
+module.exports = {
+  content: [
+    './templates/**/*.{html,js}',
+    './static/**/*.{html,js}',
+    './**/*.{html,js}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+**********************************
+>create styles dir in root and than create tailwind.css file and add code to it
+/* styles/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+******************************
+>in postcss.config.js on root dir add code 
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+***********************************
+> in terminal run this code
+npx tailwindcss -i ./styles/tailwind.css -o ./static/css/tailwind.css --watch
+****************************
+>in settings.py file in project add static dir
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+*************************
+>in tag head html add below code
+{% load static %}
+<link href="{% static 'css/tailwind.css' %}" rel="stylesheet">
+********************************************************
+>and finally
+ python manage.py run server
