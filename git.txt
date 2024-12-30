@@ -52,4 +52,13 @@ git rest HASH --mixed
 git rest HASH --hard
 **************************
 > git egnor this files not to see with git example pychache files and other such this files
-> .gitignore folder
+> .gitignore folder .gitignor file
+***************************
+> gitignor file for django and  .......
+> this site
+https://www.toptal.com/developers/gitignore/
+***********************
+> github
+https://github.com/
+> set ssh in windows
+ 
