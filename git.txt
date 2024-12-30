@@ -72,5 +72,8 @@ git push https://github.com/hnadi14/git-first-file.git master
 >add address to git terminal
 git remote add origin ADDRESS
 git remote -v
-
+> git push origin(address set abow) one (name of branch) 
+git push origin one
+****************************
+> readme.md file is markdown language file
 
