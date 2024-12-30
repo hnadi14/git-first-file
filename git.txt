@@ -66,4 +66,9 @@ https://github.com/
 > and  run this line in cmd for push project to github
 git push addres_repository_inGithub branchName
 git push https://github.com/hnadi14/git-first-file.git master
+****************
+>add address to git terminal
+git remote add origin ADDRESS
+git remote -v
+
 
