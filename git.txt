@@ -61,4 +61,9 @@ https://www.toptal.com/developers/gitignore/
 > github
 https://github.com/
 > set ssh in windows
- 
+> set ssh in github
+> add new repository in github
+> and  run this line in cmd for push project to github
+git push addres_repository_inGithub branchName
+git push https://github.com/hnadi14/git-first-file.git master
+
