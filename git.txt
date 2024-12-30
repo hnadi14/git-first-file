@@ -42,4 +42,14 @@ git revert HASHCODE
 ***************
 > conflict when a commit effect same file
 > just use revert for last commit
-
+*****************************
+> delete commit and files with reset 3 level DANGER
+>delete commit after this hash
+git reset HASH --soft
+> delete commite and untracked onstage files
+git rest HASH --mixed
+> delete commit stage and files
+git rest HASH --hard
+**************************
+> git egnor this files not to see with git example pychache files and other such this files
+> .gitignore folder
